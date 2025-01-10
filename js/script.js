@@ -105,3 +105,19 @@ document.querySelector('form').addEventListener('submit', function (e) {
         alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
     });
 });
+
+// Adicionando funcionalidade de expansão e colapso para o FAQ
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.classList.toggle('active');
+    });
+});
+
+// Adicionando o botão flutuante do WhatsApp
+const whatsappButton = document.createElement('a');
+whatsappButton.href = 'https://wa.me/5561996798902';
+whatsappButton.target = '_blank';
+whatsappButton.className = 'whatsapp-float';
+whatsappButton.innerHTML = '<i class="fab fa-whatsapp"></i>';
+document.body.appendChild(whatsappButton);
