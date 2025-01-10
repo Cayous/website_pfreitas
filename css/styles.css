@@ -84,7 +84,7 @@ nav a:hover::after {
     align-items: center;
     background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)),
         url('../images/hero-bg.jpg') center/cover;
-    margin-bottom: 4rem;
+    margin-bottom: -10rem; /* Espaço reduzido */
 }
 
 .hero-content {
@@ -108,7 +108,7 @@ nav a:hover::after {
 
 /* Section Styles */
 section {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 section h2 {
@@ -184,12 +184,12 @@ section h2 {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
     color: var(--text-color);
 }
 
@@ -238,6 +238,42 @@ footer {
     color: rgba(232, 241, 242, 0.7);
 }
 
+/* Modal de Confirmação */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.close-modal:hover {
+    color: var(--primary-color);
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     .profile-card {
@@ -258,45 +294,6 @@ footer {
     .hero h1 {
         font-size: 2.5rem;
     }
-
-    /* Estilo do Modal de agradecimento do formulario*/
-
-    .modal {
-        display: none;
-        /* Oculta o modal por padrão */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-    }
-
-    .modal-content {
-        background-color: var(--card-bg);
-        padding: 2rem;
-        border-radius: 15px;
-        max-width: 400px;
-        text-align: center;
-        position: relative;
-    }
-
-    .close-modal {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: var(--text-color);
-    }
-
-    .close-modal:hover {
-        color: var(--primary-color);
-    }
-
 
     .social-links {
         display: flex;

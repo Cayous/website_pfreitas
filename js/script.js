@@ -48,53 +48,60 @@ document.querySelectorAll('.profile-card, .service-card, .contact-form').forEach
     observer.observe(element);
 });
 
-// Função para exibir o modal de confirmação
+// Função para criar e exibir o modal de confirmação
 function showConfirmationModal() {
-    const modal = document.getElementById('confirmation-modal');
-    modal.style.display = 'flex'; // Exibe o modal
+    const modal = document.createElement('div');
+    modal.id = 'confirmation-modal';
+    modal.className = 'modal';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Mensagem Enviada!</h3>
+            <p>Obrigado pelo seu contato. Entraremos em contato assim que possível.</p>
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    // Exibe o modal
+    modal.style.display = 'flex';
+
+    // Fechar o modal ao clicar no "X"
+    modal.querySelector('.close-modal').addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.removeChild(modal);
+    });
+
+    // Fechar o modal ao clicar fora dele
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            document.body.removeChild(modal);
+        }
+    });
 }
 
-// Função para fechar o modal
-function closeConfirmationModal() {
-    const modal = document.getElementById('confirmation-modal');
-    modal.style.display = 'none'; // Oculta o modal
-}
-
-// Fechar o modal ao clicar no "X"
-document.querySelector('.close-modal').addEventListener('click', closeConfirmationModal);
-
-// Fechar o modal ao clicar fora dele
-window.addEventListener('click', (event) => {
-    const modal = document.getElementById('confirmation-modal');
-    if (event.target === modal) {
-        closeConfirmationModal();
-    }
-});
-
-// Adicionar evento de envio do formulário
+// Envio do formulário via AJAX
 document.querySelector('form').addEventListener('submit', function (e) {
     e.preventDefault(); // Impede o envio padrão do formulário
 
-    // Simula o envio do formulário (substitua pelo envio real via FormSubmit)
-    setTimeout(() => {
-        showConfirmationModal(); // Exibe o modal de confirmação
-        this.reset(); // Limpa o formulário após o envio
-    }, 1000); // Simula um atraso de 1 segundo para o envio
-});
+    const formData = new FormData(this);
 
-document.querySelector('form').addEventListener('submit', function (e) {
-    const nome = document.getElementById('nome').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const telefone = document.getElementById('telefone').value.trim();
-    const mensagem = document.getElementById('mensagem').value.trim();
-
-    if (!nome || !email || !telefone || !mensagem) {
-        e.preventDefault();
-        alert('Por favor, preencha todos os campos.');
-    }
-});
-
-document.querySelectorAll('section').forEach(section => {
-    section.classList.add('fade-out');
-    observer.observe(section);
+    fetch(this.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            showConfirmationModal(); // Exibe o modal de confirmação
+            this.reset(); // Limpa o formulário após o envio
+        } else {
+            alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
+        }
+    })
+    .catch(error => {
+        alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.');
+    });
 });
