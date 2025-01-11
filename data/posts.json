@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Como se proteger de processos por erro médico",
+        "date": "2024-03-01",
+        "summary": "Descubra as melhores práticas para evitar litígios na área médica e proteger sua carreira.",
+        "image": "images/blog1.jpg",
+        "content": "Conteúdo completo do post sobre como se proteger de processos por erro médico..."
+    },
+    {
+        "id": 2,
+        "title": "Entenda as novas regulamentações da ANS para 2024",
+        "date": "2024-02-15",
+        "summary": "As novas regras da ANS trazem mudanças importantes para profissionais e instituições de saúde.",
+        "image": "images/blog2.jpg",
+        "content": "Conteúdo completo sobre as novas regulamentações da ANS..."
+    },
+    {
+        "id": 3,
+        "title": "A importância do termo de consentimento informado",
+        "date": "2024-01-20",
+        "summary": "Saiba por que o termo de consentimento informado é essencial para a prática médica.",
+        "image": "images/blog3.jpg",
+        "content": "Conteúdo completo sobre a importância do termo de consentimento informado..."
+    },
+    {
+        "id": 4,
+        "title": "Como contestar glosas médicas de forma eficiente",
+        "date": "2023-12-10",
+        "summary": "Aprenda a proteger seus direitos e evitar prejuízos financeiros com glosas indevidas.",
+        "image": "images/blog4.jpg",
+        "content": "Conteúdo completo sobre como contestar glosas médicas..."
+    }
+]
