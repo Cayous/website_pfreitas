@@ -4,10 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Escritório especializado em Direito Médico e da Saúde em Brasília. Oferecemos consultoria jurídica para médicos, dentistas, hospitais e clínicas.">
+    <meta name="keywords" content="direito médico, direito da saúde, advogado médico, erro médico, consultoria jurídica médica, Brasília">
+    <meta name="author" content="Pacheco Freitas Advocacia">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rfreitas.adv.br/">
+    <meta property="og:title" content="Pacheco Freitas Advocacia | Direito Médico e da Saúde">
+    <meta property="og:description" content="Escritório especializado em Direito Médico e da Saúde em Brasília. Proteção jurídica para profissionais e instituições de saúde.">
+    <meta property="og:image" content="https://rfreitas.adv.br/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rfreitas.adv.br/">
+    <meta property="twitter:title" content="Pacheco Freitas Advocacia | Direito Médico e da Saúde">
+    <meta property="twitter:description" content="Escritório especializado em Direito Médico e da Saúde em Brasília. Proteção jurídica para profissionais e instituições de saúde.">
+    <meta property="twitter:image" content="https://rfreitas.adv.br/images/og-image.jpg">
+
     <title>Pacheco Freitas Advocacia | Direito Médico e da Saúde</title>
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rfreitas.adv.br/">
+
+    <!-- Seus estilos atuais -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
 </head>
 
 <body>
@@ -18,6 +43,7 @@
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#blog">Artigos</a></li>
                     <li><a href="#faq">Perguntas Frequentes</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
@@ -90,6 +116,18 @@
                     <p>Proteção para sua prática profissional e sua reputação. Defendemos profissionais de saúde em casos de alegações de erro médico, falhas no diagnóstico ou tratamento.</p>
                     <a href="#contato" class="cta-button">Saiba Mais</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <h2>Últimos Artigos do Blog</h2>
+            <div id="blog-posts" class="blog-grid">
+                <!-- Os posts serão carregados aqui dinamicamente -->
+            </div>
+            <div class="text-center">
+                <a href="blog.html" class="cta-button">Ver Todos os Artigos</a>
             </div>
         </div>
     </section>
@@ -227,8 +265,28 @@
         </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/blog.js"></script>
 
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LegalService",
+            "name": "Pacheco Freitas Advocacia",
+            "image": "https://rfreitas.adv.br/images/logo.png",
+            "description": "Escritório especializado em Direito Médico e da Saúde",
+            "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Brasília",
+            "addressRegion": "DF"
+            },
+            "telephone": "+55-61-99679-8902",
+            "url": "https://rfreitas.adv.br",
+            "priceRange": "$$",
+            "areaServed": "Brasília-DF",
+            "serviceType": ["Direito Médico", "Direito da Saúde"]
+        }
+    </script>
 </body>
 
 <footer>
