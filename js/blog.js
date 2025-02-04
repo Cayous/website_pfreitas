@@ -37,15 +37,18 @@ function renderPosts(posts, containerId, limit = null) {
 
 // Carrega e renderiza os posts na página principal
 document.addEventListener('DOMContentLoaded', async () => {
-    const posts = await loadPosts();
+    let posts = await loadPosts();
+
+    // Ordena os posts por data (do mais recente para o mais antigo)
+    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     // Renderiza os últimos 3 posts na página principal
     if (document.getElementById('blog-posts')) {
-        renderPosts(posts, 'blog-posts', 3);
+        renderPosts(posts, 'blog-posts', 3); // Limite de 3 posts
     }
 
     // Renderiza todos os posts na página de blog
     if (document.getElementById('all-blog-posts')) {
-        renderPosts(posts, 'all-blog-posts');
+        renderPosts(posts, 'all-blog-posts'); // Sem limite
     }
 });
