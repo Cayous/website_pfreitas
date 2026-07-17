@@ -1285,6 +1285,90 @@ a {
   min-height: 96px;
 }
 
+.footer-legal a {
+  color: var(--gold-300);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.consent-banner {
+  position: fixed;
+  z-index: 1200;
+  right: 24px;
+  bottom: 24px;
+  left: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 28px;
+  width: min(920px, calc(100% - 48px));
+  margin-inline: auto;
+  padding: 22px 24px;
+  color: var(--white);
+  background: rgba(5, 11, 29, 0.97);
+  border: 1px solid rgba(202, 174, 130, 0.38);
+  border-radius: 14px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.consent-banner[hidden] {
+  display: none;
+}
+
+.consent-copy strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--gold-300);
+  font-family: var(--display);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.consent-copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.consent-copy a {
+  color: var(--gold-300);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.consent-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.consent-button {
+  min-height: 42px;
+  padding: 0 17px;
+  border: 1px solid rgba(202, 174, 130, 0.45);
+  border-radius: 7px;
+  color: var(--white);
+  background: transparent;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.consent-accept {
+  color: var(--navy-950);
+  background: var(--gold-300);
+  border-color: var(--gold-300);
+}
+
+.consent-button:hover {
+  border-color: var(--gold-300);
+}
+
 .footer-legal p {
   max-width: 810px;
   margin: 0;
@@ -1662,6 +1746,26 @@ a {
     flex-direction: column;
     gap: 16px;
     padding-block: 24px 30px;
+  }
+
+  .consent-banner {
+    right: 12px;
+    bottom: 88px;
+    left: 12px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: auto;
+    padding: 19px;
+  }
+
+  .consent-actions {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+
+  .consent-button {
+    padding-inline: 10px;
+    font-size: 0.66rem;
   }
 
   .mobile-whatsapp {

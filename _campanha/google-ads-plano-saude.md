@@ -22,6 +22,21 @@ O tema permite atender, na mesma landing page, quatro situações de alta inten�
 
 ## 2. Configuração inicial
 
+### Estado implementado em 17/07/2026
+
+- Campanha: `Pesquisa | Plano de Saude | DF` (`24042415187`).
+- Estado de entrega: pausada, sem impressões e sem custo; início de segurança em 24/07/2026.
+- Orçamento provisório: R$ 30/dia; maximizar cliques com limite de CPC de R$ 15.
+- Cinco grupos de anúncios, cinco anúncios responsivos e 29 palavras-chave em correspondência exata ou de frase.
+- Rede de Pesquisa do Google apenas; parceiros de pesquisa e Display desativados.
+- Distrito Federal, opção de presença; português; segunda a sexta, das 8h às 22h.
+- Lista compartilhada `Exclusões | Plano de Saúde` aplicada, com 51 palavras-chave negativas.
+- IA Max desativada; não usar expansão de URL final nem personalização de texto.
+- Conversão principal: `WhatsApp | Clique`, contagem “Uma”, Google Ads `AW-18328884280`.
+- Tag e evento instalados na landing page com Consent Mode; personalização de anúncios sempre negada e conversões otimizadas não configuradas.
+
+Os termos `"plano negou tratamento"` e `"plano de saúde negou cirurgia"` foram retirados na criação porque o Google os sinalizou preventivamente na política de saúde em publicidade personalizada. Termos equivalentes e mais específicos permaneceram nos grupos.
+
 - Objetivo: cliques qualificados no WhatsApp.
 - Tipo: campanha de Pesquisa.
 - Redes: somente Pesquisa do Google no primeiro ciclo; desativar Display e parceiros de pesquisa inicialmente.
