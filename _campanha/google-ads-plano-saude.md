@@ -15,6 +15,18 @@ O tema permite atender, na mesma landing page, quatro situações de alta inten�
 
 ### Evidências utilizadas
 
+#### Planejador de Palavras-chave · dados da conta · Distrito Federal
+
+Consulta realizada em 17/07/2026, rede Google, período de julho de 2025 a junho de 2026. O conjunto de 30 termos apresentou média agregada de aproximadamente **250 pesquisas mensais no DF**. O Planejador atribuiu média de 50 pesquisas/mês a cada um destes termos:
+
+- `advogado liminar plano de saúde`;
+- `advogado plano de saúde df`;
+- `negativa de cirurgia plano de saúde`;
+- `plano de saúde pode negar home care`;
+- `plano de saúde pode negar internação por carência`.
+
+Os demais termos tiveram volume abaixo do limiar de detalhamento da conta ou sem dados suficientes. Em âmbito nacional, `advogado liminar plano de saúde` apresentou lance de topo de página entre R$ 7,24 e R$ 30,49; o recorte do DF não trouxe faixa de lance confiável. Os números do Planejador são estimativas, podem agrupar variantes próximas e não equivalem a contatos juridicamente qualificados.
+
 - A ANS registrou 377.467 reclamações em 2024, crescimento de 6,5% sobre 2023; 80,33% eram assistenciais. Fonte: [Relatório Anual de Gestão e Atividades da ANS](https://www.gov.br/ans/pt-br/acesso-a-informacao/transparencia-e-prestacao-de-contas/prestacao-de-contas/Relatorio_anual_de_gestao_RAG_2024_r06.pdf/%40%40download/file).
 - O diagnóstico do CNJ publicado em 2025 informa que medicamentos e tratamentos médicos representam 69% dos principais assuntos judicializados na saúde suplementar. Fonte: [Conselho Nacional de Justiça](https://www.cnj.jus.br/diagnostico-do-cnj-aponta-alto-indice-de-procedencia-e-baixa-conciliacao-em-acoes-de-saude/).
 - O Google Autocomplete consultado em 16/07/2026 apresentou recorrência de combinações com “advogado plano de saúde Brasília”, “negativa”, “liminar”, “internação”, “carência”, “medicamento alto custo” e “home care”. Autocomplete indica linguagem e recorrência relativa, não volume mensal.
