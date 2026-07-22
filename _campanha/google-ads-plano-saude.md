@@ -1,6 +1,6 @@
 # Google Ads · Negativas de plano de saúde · Brasília/DF
 
-Documento interno de campanha. Última pesquisa: 16/07/2026.
+Documento interno de campanha. Última pesquisa e revisão: 22/07/2026.
 
 ## 1. Direção de mercado
 
@@ -47,6 +47,33 @@ Os demais termos tiveram volume abaixo do limiar de detalhamento da conta ou sem
 - Conversão principal: `WhatsApp | Clique`, contagem “Uma”, Google Ads `AW-18328884280`.
 - Tag e evento instalados na landing page com Consent Mode; personalização de anúncios sempre negada e conversões otimizadas não configuradas.
 
+### Ajustes implementados em 22/07/2026
+
+- Campanha ativada, com estratégia de maximizar cliques ainda em aprendizado.
+- Orçamento e limite preservados: R$ 30/dia e CPC máximo de R$ 15.
+- Programação ampliada para todos os dias, das 8h às 22h, para cobrir urgências de fim de semana.
+- Rede, localização, idioma, estratégia de lances e configuração de conversão mantidos sem alteração.
+- Total de 37 palavras-chave positivas, todas em correspondência exata ou de frase.
+- Lista compartilhada `Exclusões | Plano de Saúde` ampliada para 55 palavras-chave negativas.
+- Oito sitelinks associados à campanha. Foram acrescentados `Medicamento de Alto Custo`, `Cirurgia ou Procedimento` e `Negativa de Home Care`, apontando para seções específicas da landing page.
+- Nova frase de destaque `Todos os dias, 8h às 22h` qualificada; a frase antiga de segunda a sexta foi pausada.
+- No momento da expansão, a campanha acumulava 17 impressões, sem clique ou custo. O diagnóstico permanecia de baixo volume, não de perda de impressões por orçamento ou classificação.
+
+Palavras-chave acrescentadas nesta revisão:
+
+- `"negativa de plano de saúde"`;
+- `"liminar plano de saúde"`;
+- `"ação contra plano de saúde"`;
+- `[processo contra plano de saúde]`;
+- `"negativa de cobertura plano de saúde"`;
+- `"negativa de procedimento plano de saúde"`;
+- `[home care plano de saúde]`.
+
+Negativas acrescentadas nesta revisão:
+
+- `oab` e `contratação`, em correspondência ampla;
+- `"plano de saúde para advogado"` e `"advogado tem direito a plano"`, em correspondência de frase.
+
 Os termos `"plano negou tratamento"` e `"plano de saúde negou cirurgia"` foram retirados na criação porque o Google os sinalizou preventivamente na política de saúde em publicidade personalizada. Termos equivalentes e mais específicos permaneceram nos grupos.
 
 - Objetivo: cliques qualificados no WhatsApp.
@@ -55,7 +82,7 @@ Os termos `"plano negou tratamento"` e `"plano de saúde negou cirurgia"` foram 
 - Local: Distrito Federal.
 - Opção de local: pessoas que estão ou costumam estar nos locais segmentados; não usar pessoas apenas interessadas no DF.
 - Idioma: português.
-- Programação: segunda a sexta, das 8h às 22h.
+- Programação: todos os dias, das 8h às 22h.
 - URL final: `https://rfreitas.adv.br/plano-de-saude.html`.
 - Estratégia inicial de palavras-chave: correspondências exata e de frase. Não usar ampla até existir histórico confiável de conversões.
 - Conversão principal futura: evento `whatsapp_click`, mapeado para Google Ads e GA4 quando as tags forem criadas.
@@ -201,7 +228,7 @@ Todos os textos devem permanecer informativos, sem garantia, comparação, autoe
 - Análise Individual do Caso
 - Direito à Saúde · Brasília
 - Negativa de Home Care
-- Seg–Sex · 8h às 22h
+- Todos os Dias · 8h às 22h
 
 Fixar apenas quando necessário para coerência. Evitar fixação excessiva, que reduz a capacidade de combinação do anúncio.
 
@@ -219,8 +246,8 @@ Fixar apenas quando necessário para coerência. Evitar fixação excessiva, que
 
 ### Recursos
 
-- Sitelinks: “Documentos necessários”, “Como funciona”, “Conheça o advogado”, “Dúvidas frequentes”.
-- Frases de destaque: “Atendimento pessoal”, “Brasília/DF”, “Seg–sex · 8h às 22h”, “Análise individual”.
+- Sitelinks: “Como funciona”, “Negativa de internação”, “Documentos para análise”, “Conheça Ricardo”, “Dúvidas frequentes”, “Medicamento de alto custo”, “Cirurgia ou procedimento” e “Negativa de home care”.
+- Frases de destaque: “OAB/DF 44.412”, “Atendimento pelo advogado”, “Brasília e todo o DF”, “Análise individual” e “Todos os dias, 8h às 22h”.
 - Recurso de chamada: `(61) 99641-9368`, somente se Ricardo também quiser receber ligações; a landing page prioriza WhatsApp.
 - Não usar preço, promoção, formulário de lead do Google ou frases como “liminar rápida”, “resultado garantido” ou “especialista”.
 
