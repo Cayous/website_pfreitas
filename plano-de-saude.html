@@ -26,8 +26,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3smX5slCNuHLi8bLeY9MK7whWMhyjYrGFEsdtdc62E6zd5wDD-iNM8A_ipUA.woff2" as="font" type="font/woff2" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/plano-saude.css">
+  <link rel="stylesheet" href="assets/navbar.css">
 
   <!-- Google Ads: consentimento negado por padrão e sem personalização. -->
   <script>
@@ -173,30 +174,25 @@
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
 
-  <header class="lp-header" id="topo">
-    <div class="shell header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/logo-mark.png" alt="" width="48" height="48" aria-hidden="true">
-        <span class="brand-name">Pacheco Freitas<small>Advocacia</small></span>
+  <nav class="navbar" aria-label="Navegação principal">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand" aria-label="Pacheco Freitas Advocacia">
+        <img src="assets/logo-mark.png" alt="" class="brand-mark" width="52" height="52" aria-hidden="true">
+        <div class="name">Pacheco Freitas<span>Advocacia</span></div>
       </a>
-      <nav class="organic-nav" aria-label="Navegação principal">
-        <a href="plano-de-saude.html" aria-current="page">Planos de Saúde</a>
-        <a href="medico.html">Direito Médico</a>
-        <a href="escritorio.html">O Escritório</a>
-        <a href="contato.html">Contato</a>
-      </nav>
-      <div class="header-contact">
-        <span class="availability"><i aria-hidden="true"></i> Todos os dias · 8h às 22h</span>
-        <a class="button button-small whatsapp-link"
-           href="https://wa.me/5561996419368?text=Ol%C3%A1%2C%20Dr.%20Ricardo.%20Encontrei%20a%20p%C3%A1gina%20sobre%20negativa%20de%20plano%20de%20sa%C3%BAde%20e%20gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20o%20meu%20caso."
-           target="_blank"
-           rel="noopener noreferrer"
-           data-cta-location="header">
-          Falar no WhatsApp
-        </a>
-      </div>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="escritorio.html">O Escritório</a></li>
+        <li><a href="plano-de-saude.html">Planos de Saúde</a></li>
+        <li><a href="medico.html">Direito Médico</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <a href="contato.html" class="navbar-cta">Fale Conosco</a>
+      <button class="navbar-toggle" id="navbar-toggle" type="button" aria-label="Abrir menu" aria-controls="navbar-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </header>
+  </nav>
 
   <main id="conteudo">
     <section class="hero">
@@ -567,6 +563,7 @@
     </div>
   </aside>
 
+  <script src="assets/navbar.js" defer></script>
   <script src="assets/plano-saude.js" defer></script>
 </body>
 </html>

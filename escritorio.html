@@ -22,11 +22,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/navbar.css">
 </head>
 <body>
 
 <!-- ============================ NAVBAR ============================ -->
-<nav class="navbar">
+<nav class="navbar" aria-label="Navegação principal">
   <div class="navbar-inner">
     <a href="index.html" class="navbar-brand" aria-label="Pacheco Freitas Advocacia">
       <img src="assets/logo-mark.png" alt="" class="brand-mark" width="52" height="52" aria-hidden="true">
@@ -40,7 +41,7 @@
       <li><a href="contato.html">Contato</a></li>
     </ul>
     <a href="contato.html" class="navbar-cta">Fale Conosco</a>
-    <button class="navbar-toggle" id="navbar-toggle" aria-label="Menu">
+    <button class="navbar-toggle" id="navbar-toggle" type="button" aria-label="Abrir menu" aria-controls="navbar-menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -217,21 +218,7 @@
   </div>
 </footer>
 
-<script>
-  const toggle = document.getElementById('navbar-toggle');
-  const menu = document.getElementById('navbar-menu');
-  if (toggle) {
-    toggle.addEventListener('click', () => {
-      toggle.classList.toggle('open');
-      menu.classList.toggle('open');
-    });
-  }
-  document.querySelectorAll('.navbar-menu a').forEach(a => {
-    if (a.getAttribute('href') === window.location.pathname.split('/').pop()) {
-      a.classList.add('active');
-    }
-  });
-</script>
+<script src="assets/navbar.js" defer></script>
 
 </body>
 </html>

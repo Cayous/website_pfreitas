@@ -1,0 +1,221 @@
+/* Header compartilhado por todas as páginas do site. */
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 0;
+  color: #fff;
+  background: rgba(7, 17, 43, 0.96);
+  border-bottom: 1px solid rgba(184, 153, 104, 0.18);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+}
+
+.navbar-inner {
+  width: 100%;
+  max-width: 1240px;
+  height: 78px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 0 0 auto;
+  color: #fff;
+}
+
+.navbar-brand .brand-mark {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.navbar-brand .name {
+  padding-left: 14px;
+  color: #fff;
+  border-left: 1px solid rgba(184, 153, 104, 0.35);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.navbar-brand .name span {
+  display: block;
+  margin-top: 4px;
+  color: #c9ae82;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+}
+
+.navbar-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+}
+
+.navbar-menu a {
+  position: relative;
+  display: block;
+  padding: 6px 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  transition: color 0.25s ease;
+}
+
+.navbar-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: #b89968;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #fff;
+}
+
+.navbar-menu a:hover::after,
+.navbar-menu a.active::after {
+  width: 100%;
+}
+
+.navbar-menu a.active {
+  color: #c9ae82;
+}
+
+.navbar-cta {
+  flex: 0 0 auto;
+  padding: 12px 22px;
+  color: #c9ae82;
+  border: 1px solid #b89968;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.navbar-cta:hover {
+  color: #07112b;
+  background: #b89968;
+}
+
+.navbar-toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  display: none;
+  color: #fff;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  position: absolute;
+  right: 4px;
+  left: 4px;
+  display: block;
+  height: 1.5px;
+  background: #c9ae82;
+  transition: top 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-toggle span:nth-child(1) { top: 10px; }
+.navbar-toggle span:nth-child(2) { top: 16px; }
+.navbar-toggle span:nth-child(3) { top: 22px; }
+.navbar-toggle.open span:nth-child(1) { top: 16px; transform: rotate(45deg); }
+.navbar-toggle.open span:nth-child(2) { opacity: 0; }
+.navbar-toggle.open span:nth-child(3) { top: 16px; transform: rotate(-45deg); }
+
+@media (max-width: 1100px) {
+  .navbar-menu,
+  .navbar-cta {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu.open {
+    position: absolute;
+    top: 78px;
+    right: 0;
+    left: 0;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background: #07112b;
+    border-bottom: 1px solid rgba(184, 153, 104, 0.2);
+  }
+
+  .navbar-menu.open a {
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-inner {
+    padding-inline: 32px;
+  }
+
+  .navbar-brand {
+    gap: 10px;
+  }
+
+  .navbar-brand .brand-mark {
+    width: 46px;
+    height: 46px;
+  }
+
+  .navbar-brand .name {
+    padding-left: 10px;
+    font-size: 0.85rem;
+  }
+
+  .navbar-brand .name span {
+    font-size: 0.55rem;
+  }
+}
+
+@media print {
+  .navbar {
+    display: none !important;
+  }
+}
