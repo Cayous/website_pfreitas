@@ -59,7 +59,6 @@ O domínio canônico configurado no site é `https://rfreitas.adv.br/`. Se o dom
 ## Notas técnicas
 
 - Fontes via Google Fonts (Cormorant Garamond + Lora + Montserrat).
-- Mapa do Google Maps na página `contato.html` usa `<iframe>` com endereço já preenchido — funciona automaticamente quando hospedado.
 - Mobile-first responsivo. Navbar vira hamburger abaixo de 980px.
 - Sem JavaScript pesado: toggle de menu, highlight de página ativa, consentimento e medição de cliques da campanha.
 - O contato institucional direciona para telefone, e-mail e WhatsApp; o site não coleta prontuários ou dados médicos por formulário.
