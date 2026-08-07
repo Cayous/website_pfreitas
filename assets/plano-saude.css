@@ -166,6 +166,27 @@ a {
   gap: 24px;
 }
 
+.organic-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2vw, 30px);
+  margin-left: auto;
+}
+
+.organic-nav a {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.organic-nav a:hover,
+.organic-nav a[aria-current="page"] {
+  color: var(--gold-300);
+}
+
 .availability {
   display: inline-flex;
   align-items: center;
@@ -753,6 +774,59 @@ a {
   white-space: nowrap;
 }
 
+.sources-section {
+  background: var(--white);
+}
+
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.source-card {
+  display: flex;
+  min-height: 310px;
+  padding: 34px;
+  border: 1px solid var(--line);
+  flex-direction: column;
+  background: var(--paper);
+}
+
+.source-card > span {
+  color: var(--gold-text);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.source-card h3 {
+  margin-top: 18px;
+  color: var(--navy-900);
+  font-size: 1.75rem;
+}
+
+.source-card p {
+  margin-top: 15px;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.source-card a {
+  margin-top: auto;
+  padding-top: 24px;
+  color: var(--navy-700);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.content-updated {
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
 .documents-section {
   position: relative;
   overflow: hidden;
@@ -1046,6 +1120,11 @@ a {
   margin: 18px 0 0;
   color: var(--muted);
   font-size: 0.87rem;
+}
+
+.profile-copy > .text-link {
+  display: inline-flex;
+  margin-top: 26px;
 }
 
 .credentials-grid {
@@ -1392,6 +1471,7 @@ a {
 .process-section,
 .profile-section,
 .faq-section,
+.sources-section,
 .final-cta,
 .lp-footer {
   content-visibility: auto;
@@ -1399,6 +1479,10 @@ a {
 }
 
 @media (max-width: 1050px) {
+  .organic-nav {
+    display: none;
+  }
+
   .availability {
     display: none;
   }
@@ -1419,6 +1503,10 @@ a {
   }
 
   .problem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .source-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1640,6 +1728,14 @@ a {
 
   .problem-grid {
     grid-template-columns: 1fr;
+  }
+
+  .source-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .source-card {
+    min-height: 0;
   }
 
   .problem-card {

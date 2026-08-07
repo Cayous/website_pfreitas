@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Plano de Saúde Negou Tratamento? Advogado em Brasília</title>
-  <meta name="description" content="Orientação jurídica em Brasília para negativa de internação, cirurgia, medicamento de alto custo ou home care. Ricardo Freitas · OAB/DF 44.412.">
+  <title>Advogado de Plano de Saúde em Brasília | Negativas</title>
+  <meta name="description" content="Advocacia contra planos de saúde em Brasília para negativa de internação, cirurgia, medicamento ou home care. Ricardo Freitas · OAB/DF 44.412.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#07112b">
   <link rel="canonical" href="https://rfreitas.adv.br/plano-de-saude.html">
 
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Seu plano de saúde negou um tratamento prescrito?">
-  <meta property="og:description" content="Informações e orientação jurídica para negativas de internação, cirurgia, medicamento e home care em Brasília/DF.">
+  <meta property="og:title" content="Advogado de plano de saúde em Brasília">
+  <meta property="og:description" content="Orientação jurídica para negativas de internação, cirurgia, medicamento e home care em Brasília/DF.">
   <meta property="og:url" content="https://rfreitas.adv.br/plano-de-saude.html">
   <meta property="og:site_name" content="Pacheco Freitas Advocacia">
   <meta property="og:image" content="https://rfreitas.adv.br/assets/foto_ricardo.jpeg">
@@ -67,13 +67,15 @@
         "@type": "LegalService",
         "@id": "https://rfreitas.adv.br/#escritorio",
         "name": "Pacheco Freitas Advocacia",
-        "url": "https://rfreitas.adv.br/plano-de-saude.html",
+        "url": "https://rfreitas.adv.br/",
         "telephone": "+55-61-99641-9368",
+        "email": "contato@rfreitas.adv.br",
+        "logo": "https://rfreitas.adv.br/assets/logo.png",
         "image": "https://rfreitas.adv.br/assets/foto_ricardo.jpeg",
-        "areaServed": {
-          "@type": "AdministrativeArea",
-          "name": "Distrito Federal"
-        },
+        "areaServed": [
+          { "@type": "City", "name": "Brasília" },
+          { "@type": "AdministrativeArea", "name": "Distrito Federal" }
+        ],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "QI 33, Lote 2, Guará II",
@@ -82,19 +84,53 @@
           "postalCode": "71065-330",
           "addressCountry": "BR"
         },
-        "founder": { "@id": "https://rfreitas.adv.br/#ricardo" }
+        "founder": { "@id": "https://rfreitas.adv.br/#ricardo" },
+        "knowsAbout": ["Direito da Saúde", "Planos de saúde", "Negativa de cobertura assistencial"]
       },
       {
         "@type": "Person",
         "@id": "https://rfreitas.adv.br/#ricardo",
         "name": "Ricardo Pacheco Mesquita de Freitas",
-        "jobTitle": "Advogado",
+        "url": "https://rfreitas.adv.br/equipe.html",
+        "jobTitle": "Advogado e sócio fundador",
+        "identifier": "OAB/DF 44.412",
         "image": "https://rfreitas.adv.br/assets/foto_ricardo.jpeg",
         "telephone": "+55-61-99641-9368",
-        "worksFor": { "@id": "https://rfreitas.adv.br/#escritorio" }
+        "worksFor": { "@id": "https://rfreitas.adv.br/#escritorio" },
+        "knowsAbout": ["Direito da Saúde", "Planos de saúde", "Direito Médico"]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://rfreitas.adv.br/plano-de-saude.html#servico",
+        "name": "Advocacia contra planos de saúde em Brasília",
+        "serviceType": "Orientação e atuação jurídica em negativas de cobertura de planos de saúde",
+        "url": "https://rfreitas.adv.br/plano-de-saude.html",
+        "provider": { "@id": "https://rfreitas.adv.br/#escritorio" },
+        "areaServed": [
+          { "@type": "City", "name": "Brasília" },
+          { "@type": "AdministrativeArea", "name": "Distrito Federal" }
+        ],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Beneficiários de planos de saúde"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://rfreitas.adv.br/plano-de-saude.html#pagina",
+        "url": "https://rfreitas.adv.br/plano-de-saude.html",
+        "name": "Advogado de plano de saúde em Brasília",
+        "description": "Orientação jurídica em negativas de internação, cirurgia, medicamento e home care.",
+        "inLanguage": "pt-BR",
+        "about": { "@id": "https://rfreitas.adv.br/plano-de-saude.html#servico" },
+        "isPartOf": { "@id": "https://rfreitas.adv.br/#website" },
+        "author": { "@id": "https://rfreitas.adv.br/#ricardo" },
+        "dateModified": "2026-08-06"
       },
       {
         "@type": "FAQPage",
+        "@id": "https://rfreitas.adv.br/plano-de-saude.html#faq",
+        "isPartOf": { "@id": "https://rfreitas.adv.br/plano-de-saude.html#pagina" },
         "mainEntity": [
           {
             "@type": "Question",
@@ -143,6 +179,12 @@
         <img src="assets/logo-mark.png" alt="" width="48" height="48" aria-hidden="true">
         <span class="brand-name">Pacheco Freitas<small>Advocacia</small></span>
       </a>
+      <nav class="organic-nav" aria-label="Navegação principal">
+        <a href="plano-de-saude.html" aria-current="page">Planos de Saúde</a>
+        <a href="medico.html">Direito Médico</a>
+        <a href="escritorio.html">O Escritório</a>
+        <a href="contato.html">Contato</a>
+      </nav>
       <div class="header-contact">
         <span class="availability"><i aria-hidden="true"></i> Todos os dias · 8h às 22h</span>
         <a class="button button-small whatsapp-link"
@@ -225,8 +267,8 @@
       <div class="shell">
         <div class="section-heading narrow">
           <span class="section-kicker">Situações recorrentes</span>
-          <h2>Quando a resposta do plano interrompe um cuidado que <em>não pode esperar.</em></h2>
-          <p>Cada negativa precisa ser compreendida no contexto do contrato, da prescrição médica e da urgência real do paciente.</p>
+          <h2>Advocacia contra planos de saúde em Brasília para cuidados que <em>não podem esperar.</em></h2>
+          <p>Atuamos na análise de negativas de cobertura em Brasília e no Distrito Federal. Cada caso precisa ser compreendido no contexto do contrato, da prescrição médica, das regras da ANS e da urgência real do paciente.</p>
         </div>
 
         <div class="problem-grid">
@@ -365,7 +407,7 @@
           <span class="section-kicker">Quem analisa seu caso</span>
           <h2>Ricardo Pacheco<br><em>Mesquita de Freitas</em></h2>
           <p class="profile-role">Advogado · Sócio fundador</p>
-          <p>Advogado há mais de uma década, com atuação contenciosa e consultiva. Há mais de cinco anos dedica parcela relevante de sua prática ao Direito Médico e da Saúde, incluindo relações entre beneficiários e operadoras.</p>
+          <p>Advogado há mais de uma década, com atuação contenciosa e consultiva. Há mais de cinco anos dedica parcela relevante de sua prática ao Direito Médico e da Saúde, incluindo negativas de cobertura e relações entre beneficiários e operadoras.</p>
           <p>O atendimento é pessoal: a primeira conversa, a análise dos documentos e a definição da estratégia jurídica são conduzidas diretamente por Ricardo.</p>
 
           <div class="credentials-grid" aria-label="Formação e experiência">
@@ -374,6 +416,7 @@
             <div><strong>+10 anos</strong><span>de advocacia</span></div>
             <div><strong>Brasília</strong><span>atendimento presencial e remoto</span></div>
           </div>
+          <a class="text-link dark" href="equipe.html">Conhecer formação e trajetória <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
@@ -418,13 +461,46 @@
           </details>
           <details>
             <summary>O atendimento pode ser feito à distância?<span aria-hidden="true"></span></summary>
-            <p>Sim. A campanha é direcionada a Brasília e ao Distrito Federal, mas reuniões e análise documental podem ocorrer por meios digitais quando isso for adequado ao caso.</p>
+            <p>Sim. O atendimento do escritório é concentrado em Brasília e no Distrito Federal, mas reuniões e análise documental podem ocorrer por meios digitais quando isso for adequado ao caso.</p>
           </details>
           <details>
             <summary>Enviar uma mensagem já significa contratar o escritório?<span aria-hidden="true"></span></summary>
             <p>Não. O envio da mensagem inicia uma conversa e não cria, por si só, relação advogado-cliente. A atuação depende de análise prévia, ausência de conflito de interesses e contratação formal.</p>
           </details>
         </div>
+      </div>
+    </section>
+
+    <section class="section sources-section" id="fontes">
+      <div class="shell">
+        <div class="section-heading narrow">
+          <span class="section-kicker">Referências verificáveis</span>
+          <h2>Informação jurídica apoiada em <em>fontes oficiais.</em></h2>
+          <p>As regras variam conforme o contrato e o caso concreto. Estes materiais públicos ajudam a compreender o ponto de partida regulatório e legal.</p>
+        </div>
+
+        <div class="source-grid">
+          <article class="source-card">
+            <span>ANS</span>
+            <h3>Atendimento ao beneficiário</h3>
+            <p>A RN nº 623/2024, em vigor desde 1º de julho de 2025, reforça transparência, rastreabilidade e clareza nas respostas das operadoras.</p>
+            <a href="https://www.gov.br/ans/pt-br/assuntos/operadoras/atendimento-ao-beneficiario-diretrizes-da-rn-no-623-2024-para-operadoras" target="_blank" rel="noopener noreferrer">Consultar a ANS <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="source-card">
+            <span>Lei nº 9.656/1998</span>
+            <h3>Urgência e emergência</h3>
+            <p>A Lei dos Planos de Saúde contém regras específicas para atendimentos de urgência e emergência. O enquadramento depende das circunstâncias e da documentação médica.</p>
+            <a href="https://www.planalto.gov.br/ccivil_03/leis/l9656compilado.htm" target="_blank" rel="noopener noreferrer">Consultar a lei <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="source-card">
+            <span>Lei nº 14.454/2022</span>
+            <h3>Tratamento fora do rol da ANS</h3>
+            <p>A lei estabeleceu critérios para a cobertura de exames ou tratamentos prescritos que não constem do rol. A aplicação exige análise técnica individual.</p>
+            <a href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14454.htm" target="_blank" rel="noopener noreferrer">Consultar a lei <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+
+        <p class="content-updated">Conteúdo atualizado em 6 de agosto de 2026. Informações gerais; não substituem a análise jurídica do caso concreto.</p>
       </div>
     </section>
 
@@ -465,7 +541,7 @@
     </div>
     <div class="shell footer-legal">
       <p>As informações desta página são gerais e não substituem análise jurídica individual. Resultados e prazos não são garantidos. O atendimento depende de verificação de conflito de interesses e contratação formal.</p>
-      <span>© <span id="current-year">2026</span> Pacheco Freitas Advocacia · <a href="privacidade.html">Privacidade</a></span>
+      <span><a href="escritorio.html">Escritório</a> · <a href="medico.html">Direito Médico</a> · <a href="equipe.html">Equipe</a> · <a href="contato.html">Contato</a> · <a href="privacidade.html">Privacidade</a><br>© <span id="current-year">2026</span> Pacheco Freitas Advocacia</span>
     </div>
   </footer>
 

@@ -8,12 +8,18 @@ Site estático em HTML/CSS/JS puro. Sem build, sem dependências, sem servidor d
 pacheco-freitas-site/
 ├── index.html              ← Home (página inicial)
 ├── escritorio.html         ← O Escritório
-├── empresarial.html        ← Vertical I — Família Empresária e Patrimônio
-├── medico.html             ← Vertical II — Direito Médico e da Saúde
+├── plano-de-saude.html     ← Planos de Saúde — página orgânica e de campanha
+├── medico.html             ← Direito Médico para profissionais e instituições
+├── empresarial.html        ← Redirecionamento legado para Planos de Saúde
 ├── equipe.html             ← Equipe (Ricardo + consultores e parceiros)
 ├── contato.html            ← Contato
+├── privacidade.html        ← Política de privacidade
+├── robots.txt              ← Regras de rastreamento e local do sitemap
+├── sitemap.xml             ← URLs canônicas para indexação
 └── assets/
-    ├── styles.css          ← TODO o CSS está aqui (sistema de design)
+    ├── styles.css          ← CSS do site institucional
+    ├── plano-saude.css     ← CSS da página de Planos de Saúde
+    ├── plano-saude.js      ← Conversões, consentimento e interações
     ├── logotipo.png
     ├── logotipo2.png
     ├── logotipo_transparente.png
@@ -38,26 +44,28 @@ pacheco-freitas-site/
 
 **Adicionar página nova:** copie qualquer `.html` existente, troque o conteúdo do meio (entre `<nav>` e `<footer>`), e adicione um link no menu (`<ul class="navbar-menu">`) de TODAS as páginas.
 
-## Alinhamento com o folder
+## Posicionamento do site
 
-O site é o lastro institucional do folder PDF entregue à holding familiar:
+O site concentra a apresentação do escritório em duas frentes complementares:
 
-- **Home + Escritório** estabelecem o posicionamento boutique e a divisão em duas verticais (afasta a impressão de "escritório só de Direito Médico" que o site anterior dava).
-- **Empresarial & Patrimônio** confirma e aprofunda o que o folder ofereceu — empresarial, sucessório, imobiliário, tributário, família patrimonial, contencioso cível.
+- **Planos de Saúde** atende beneficiários em negativas de internação, cirurgia, medicamento, home care e outros tratamentos prescritos.
+- **Direito Médico** atende médicos, dentistas, clínicas e hospitais em atuação preventiva, responsabilidade civil e processos ético-disciplinares.
 - **Equipe** apresenta o sócio fundador Ricardo e informa que o escritório conta com uma equipe especializada de consultores e parceiros, formada conforme as necessidades de cada trabalho.
 
 ## Domínio
 
-Conteúdo migrado de `rfreitas.adv.br` provisoriamente, até ativação de `pachecofreitas.adv.br`. Recomenda-se redirecionar 301 do domínio antigo para o novo após a transição.
+O domínio canônico configurado no site é `https://rfreitas.adv.br/`. Se o domínio mudar, atualize os links canônicos, Open Graph, JSON-LD, `robots.txt` e `sitemap.xml`, além de configurar redirecionamentos HTTP 301.
 
 ## Notas técnicas
 
 - Fontes via Google Fonts (Cormorant Garamond + Lora + Montserrat).
 - Mapa do Google Maps na página `contato.html` usa `<iframe>` com endereço já preenchido — funciona automaticamente quando hospedado.
 - Mobile-first responsivo. Navbar vira hamburger abaixo de 980px.
-- Sem JavaScript pesado: apenas toggle de menu mobile e highlight de página ativa.
-- Formulário de contato em `contato.html` é puramente cosmético na entrega — para funcionar de verdade é necessário um backend (ex: Formspree, Netlify Forms, ou integração com WhatsApp).
+- Sem JavaScript pesado: toggle de menu, highlight de página ativa, consentimento e medição de cliques da campanha.
+- O contato institucional direciona para telefone, e-mail e WhatsApp; o site não coleta prontuários ou dados médicos por formulário.
+- As páginas principais possuem títulos e descrições exclusivos, URLs canônicas, Open Graph, HTML semântico e dados estruturados Schema.org.
+- `robots.txt` permite Googlebot, Bingbot e OAI-SearchBot e informa a localização do sitemap.
 
-## OAB
+## Dados profissionais
 
-O número da inscrição OAB do(s) sócio(s) ainda precisa ser inserido no rodapé. Procure por `OAB/DF` em todos os arquivos `.html` e substitua pelo número correto (ex: `OAB/DF nº 12.345`).
+Ricardo Pacheco Mesquita de Freitas · OAB/DF 44.412. Mantenha nome, inscrição, telefone e endereço consistentes no site, no Perfil da Empresa no Google e nos demais perfis públicos do escritório.
