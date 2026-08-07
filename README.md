@@ -10,15 +10,14 @@ pacheco-freitas-site/
 ├── escritorio.html         ← O Escritório
 ├── empresarial.html        ← Vertical I — Família Empresária e Patrimônio
 ├── medico.html             ← Vertical II — Direito Médico e da Saúde
-├── equipe.html             ← Equipe (Ricardo + Martim)
+├── equipe.html             ← Equipe (Ricardo + consultores e parceiros)
 ├── contato.html            ← Contato
 └── assets/
     ├── styles.css          ← TODO o CSS está aqui (sistema de design)
     ├── logotipo.png
     ├── logotipo2.png
     ├── logotipo_transparente.png
-    ├── foto_ricardo.jpeg
-    └── foto_martim.jpeg
+    └── foto_ricardo.jpeg
 ```
 
 ## Como editar
@@ -33,7 +32,7 @@ pacheco-freitas-site/
 --paper:     #FBFAF6   (off-white de fundo)
 ```
 
-**Trocar fotos:** substitua os arquivos em `assets/` mantendo os nomes (`foto_ricardo.jpeg`, `foto_martim.jpeg`).
+**Trocar foto:** substitua o arquivo `assets/foto_ricardo.jpeg`, mantendo o mesmo nome.
 
 **Trocar dados de contato:** os dados aparecem no rodapé de TODAS as páginas e na página `contato.html`. Use Ctrl+F para encontrar o número, e-mail ou endereço e substituir em cada arquivo.
 
@@ -45,7 +44,7 @@ O site é o lastro institucional do folder PDF entregue à holding familiar:
 
 - **Home + Escritório** estabelecem o posicionamento boutique e a divisão em duas verticais (afasta a impressão de "escritório só de Direito Médico" que o site anterior dava).
 - **Empresarial & Patrimônio** confirma e aprofunda o que o folder ofereceu — empresarial, sucessório, imobiliário, tributário, família patrimonial, contencioso cível.
-- **Equipe** apresenta o Martim como **Advogado Consultor** (parceria permanente). Coerente com o folder, em que ele assume a posição de sócio para o projeto específico de assessoria continuada — figura comum em projetos boutique.
+- **Equipe** apresenta o sócio fundador Ricardo e informa que o escritório conta com uma equipe especializada de consultores e parceiros, formada conforme as necessidades de cada trabalho.
 
 ## Domínio
 

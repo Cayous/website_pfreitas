@@ -480,6 +480,10 @@ section { position: relative; }
   grid-template-columns: repeat(2, 1fr);
   gap: 64px;
 }
+.team-grid.single {
+  grid-template-columns: minmax(0, 640px);
+  justify-content: center;
+}
 .member {
   display: flex; flex-direction: column;
 }
