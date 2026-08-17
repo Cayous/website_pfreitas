@@ -633,6 +633,10 @@ a {
   background: var(--paper);
 }
 
+.cancellation-section {
+  background: var(--cream);
+}
+
 .problem-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

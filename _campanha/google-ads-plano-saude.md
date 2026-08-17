@@ -59,7 +59,41 @@ Os demais termos tiveram volume abaixo do limiar de detalhamento da conta ou sem
 - Nova frase de destaque `Todos os dias, 8h às 22h` qualificada; a frase antiga de segunda a sexta foi pausada.
 - No momento da expansão, a campanha acumulava 17 impressões, sem clique ou custo. O diagnóstico permanecia de baixo volume, não de perda de impressões por orçamento ou classificação.
 
-Palavras-chave acrescentadas nesta revisão:
+### Revisão de 17/08/2026 · leitura dos 30 dias e expansão de alcance
+
+Resultado acumulado de 18/07 a 16/08: 350 impressões, 15 cliques, CTR de 4,29%, CPC médio de R$ 12,91, custo de R$ 193,70 e 1 conversão. Em 30 dias foram usados apenas 21,5% do orçamento disponível (R$ 193,70 de R$ 900), com veiculação em 17 dos 30 dias. Houve um intervalo sem nenhuma impressão entre 23/07 e 04/08.
+
+Desempenho por grupo: `Advogado e Negativa` com 9 cliques e R$ 118,09; `Cirurgia e Procedimento` com 5 cliques e R$ 65,57; `Internação e Carência` com 1 clique e R$ 10,04. `Medicamento e Tratamento` acumulou 38 impressões sem clique e `Home Care` não registrou entrega relevante. Smartphones responderam por 11 dos 15 cliques, com CTR de 5,29% contra 2,86% no desktop.
+
+Diagnóstico central: o gargalo é alcance, não eficiência. O painel exibe o status `Configuração de lance limitada` e o diagnóstico da campanha informa que a estratégia de lances está limitada pelo limite de lance máximo. No ritmo observado, seriam necessários cerca de 100 dias para acumular 50 cliques, volume mínimo para leitura de taxa de conversão.
+
+A única conversão do período veio de reajuste por faixa etária, tema que consta da lista de negativas. Não houve, portanto, contato aderente à tese de negativa no período. Por decisão de 17/08/2026, reajuste permanece fora do escopo: gera procura, mas a tese é considerada difícil, e o tema fica reservado para eventual uso posterior em relacionamento.
+
+Alterações aplicadas em 17/08/2026:
+
+- Localização ampliada do Distrito Federal para nove locais, acrescentando Valparaíso de Goiás, Novo Gama, Cidade Ocidental, Luziânia, Águas Lindas de Goiás, Santo Antônio do Descoberto, Formosa e Planaltina, todos em Goiás. A opção de local permanece em presença, sem interesse. Consequência a considerar: pelo art. 101, I, do CDC o consumidor pode ajuizar no próprio domicílio, de modo que casos vindos do Entorno tendem ao TJGO, não ao TJDFT.
+- Removida a negativa `cancelamento plano`, em correspondência ampla, da lista `Exclusões | Plano de Saúde`. Em correspondência ampla ela bloqueava qualquer consulta que contivesse `cancelamento` e `plano`, inclusive `cancelamento unilateral plano de saúde`. A negativa `cancelar plano` foi mantida, pois cobre a intenção de cancelar o próprio plano sem bloquear as flexões `cancelou`, `cancelado` e `cancelamento`.
+- Criado o grupo de anúncios `Cancelamento Unilateral`, com oito palavras-chave em correspondência de frase ou exata e um anúncio responsivo com 15 títulos e 4 descrições, apontando para `https://rfreitas.adv.br/plano-de-saude.html#cancelamento`. A configuração de correspondência de termos de pesquisa foi mantida em uso apenas das palavras-chave informadas.
+- Acrescentada à landing page a seção `#cancelamento`, com três situações e um CTA de WhatsApp com `data-cta-location="cancelamento"`, já contabilizado como conversão pelo script existente.
+
+Palavras-chave do grupo `Cancelamento Unilateral`:
+
+- `"cancelamento unilateral plano de saúde"`;
+- `"plano de saúde cancelou meu plano"`;
+- `"operadora cancelou plano de saúde"`;
+- `"cancelamento plano de saúde coletivo"`;
+- `[advogado cancelamento plano de saúde]`;
+- `"plano de saúde cancelado sem aviso"`;
+- `"rescisão unilateral plano de saúde"`;
+- `"reativar plano de saúde cancelado"`.
+
+Pendências desta revisão:
+
+- Acrescentar como negativas exatas as consultas `medicamentos da farmacia de alto custo`, `medicamentos farmacia de alto custo` e `remedio farmacia de alto custo`. Foram recomendadas em 12/08/2026 e continuavam servindo no relatório de 17/08. O painel de inclusão de negativas não abriu durante a revisão.
+- Não alterar orçamento, estratégia de lances nem teto de CPC antes de medir o efeito da ampliação geográfica. Se o orçamento continuar sobrando após duas semanas, avaliar elevar o teto de CPC de R$ 15 para a faixa de R$ 20 a R$ 22, já que o limite de lance está apontado como restrição.
+- Monitorar se a remoção de `cancelamento plano` traz consultas de quem deseja cancelar o próprio plano; se ocorrer, acrescentar negativas de frase específicas em vez de restaurar a negativa ampla.
+
+Palavras-chave acrescentadas na revisão de 22/07/2026:
 
 - `"negativa de plano de saúde"`;
 - `"liminar plano de saúde"`;
@@ -69,7 +103,7 @@ Palavras-chave acrescentadas nesta revisão:
 - `"negativa de procedimento plano de saúde"`;
 - `[home care plano de saúde]`.
 
-Negativas acrescentadas nesta revisão:
+Negativas acrescentadas na revisão de 22/07/2026:
 
 - `oab` e `contratação`, em correspondência ampla;
 - `"plano de saúde para advogado"` e `"advogado tem direito a plano"`, em correspondência de frase.
