@@ -52,6 +52,44 @@ O site concentra a apresentação do escritório em duas frentes complementares:
 - **Direito Médico** atende médicos, dentistas, clínicas e hospitais em atuação preventiva, responsabilidade civil e processos ético-disciplinares.
 - **Equipe** apresenta o sócio fundador Ricardo e informa que o escritório conta com uma equipe especializada de consultores e parceiros, formada conforme as necessidades de cada trabalho.
 
+## Como publicar (medido em 21.09.2026)
+
+O site é **GitHub Pages**, servindo a branch `main` na raiz — confirmado pelos
+IPs (185.199.108–111.153) e pelo cabeçalho `server: GitHub.com`. Push em `main`
+publica; a compilação leva cerca de um minuto.
+
+**Armadilha:** o `git push`/`git fetch` por SSH **não funciona nesta máquina** —
+a chave pede passphrase e não há `ssh-askpass` instalado. O sintoma engana: o
+`origin/main` local fica congelado e o `git status` anuncia "ahead 8" mesmo
+quando o GitHub já está em dia. Não acredite nesse número sem um fetch que
+tenha funcionado.
+
+Publicar por HTTPS, usando a credencial do `gh`:
+
+```bash
+gh auth setup-git
+git push https://github.com/Cayous/website_pfreitas.git main
+```
+
+Conferir de fato no ar:
+
+```bash
+gh api repos/Cayous/website_pfreitas/pages/builds --jq '.[0].status'
+curl -sI https://rfreitas.adv.br/<pagina>.html | head -1
+```
+
+## Páginas de conteúdo
+
+Além das institucionais, o site publica páginas escritas para serem
+encontradas na busca. A primeira é `golpe-falso-funcionario-banco.html`.
+Toda página nova precisa de: entrada no `sitemap.xml`, link no rodapé das
+demais páginas, `canonical` próprio e conteúdo informativo e sóbrio, sem
+menção a honorários e sem promessa de resultado (Provimento 205/2021 da OAB).
+
+A `retaguarda.html` é a única página dirigida a **advogados**, não a clientes
+finais — por isso fica no rodapé e não no menu principal, e usa o telefone
+pessoal do Ricardo, enquanto as demais usam o número do CNPJ.
+
 ## Domínio
 
 O domínio canônico configurado no site é `https://rfreitas.adv.br/`. Se o domínio mudar, atualize os links canônicos, Open Graph, JSON-LD, `robots.txt` e `sitemap.xml`, além de configurar redirecionamentos HTTP 301.
