@@ -20,40 +20,55 @@
     return;
   }
 
+  // O hambúrguer abre uma cópia do menu; no estágio parcial ela mostra só os
+  // itens que saíram da barra (ver navbar.css).
+  const navbar = menu.closest(".navbar");
+  const inner = menu.closest(".navbar-inner");
+  const drawer = document.createElement("ul");
+  drawer.className = "navbar-drawer";
+  drawer.id = "navbar-drawer";
+  menu.querySelectorAll(":scope > li").forEach((item) => {
+    drawer.appendChild(item.cloneNode(true));
+  });
+  navbar.appendChild(drawer);
+  toggle.setAttribute("aria-controls", drawer.id);
+
   const closeMenu = () => {
     toggle.classList.remove("open");
-    menu.classList.remove("open");
+    drawer.classList.remove("open");
     toggle.setAttribute("aria-label", "Abrir menu");
     toggle.setAttribute("aria-expanded", "false");
   };
 
   toggle.addEventListener("click", () => {
-    const willOpen = !menu.classList.contains("open");
+    const willOpen = !drawer.classList.contains("open");
     toggle.classList.toggle("open", willOpen);
-    menu.classList.toggle("open", willOpen);
+    drawer.classList.toggle("open", willOpen);
     toggle.setAttribute("aria-label", willOpen ? "Fechar menu" : "Abrir menu");
     toggle.setAttribute("aria-expanded", String(willOpen));
   });
 
-  menu.querySelectorAll("a").forEach((link) => {
+  drawer.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", closeMenu);
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && menu.classList.contains("open")) {
+    if (event.key === "Escape" && drawer.classList.contains("open")) {
       closeMenu();
       toggle.focus();
     }
   });
 
-  // Recolhe o menu sempre que ele não couber na largura disponível.
-  const navbar = menu.closest(".navbar");
-  const inner = menu.closest(".navbar-inner");
-
+  // Escolhe o primeiro estágio em que o cabeçalho cabe na largura disponível.
   const fitMenu = () => {
-    navbar.classList.remove("is-compact");
-    const overflows = inner.scrollWidth > inner.clientWidth;
-    navbar.classList.toggle("is-compact", overflows);
+    const fits = () => inner.scrollWidth <= inner.clientWidth;
+    navbar.classList.remove("is-partial", "is-compact");
+    if (!fits()) {
+      navbar.classList.add("is-partial");
+      if (!fits()) {
+        navbar.classList.replace("is-partial", "is-compact");
+      }
+    }
 
     if (getComputedStyle(toggle).display === "none") {
       closeMenu();

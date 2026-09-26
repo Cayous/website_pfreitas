@@ -118,115 +118,6 @@ section { position: relative; }
 .bg-navy .dim { color: rgba(255,255,255,0.6); }
 
 /* ==========================================================================
-   NAVBAR
-   ========================================================================== */
-
-.navbar {
-  position: fixed; top: 0; left: 0; right: 0;
-  background: rgba(7, 17, 43, 0.96);
-  backdrop-filter: saturate(180%) blur(14px);
-  -webkit-backdrop-filter: saturate(180%) blur(14px);
-  border-bottom: 1px solid rgba(184, 153, 104, 0.18);
-  z-index: 1000;
-  transition: background 0.3s ease;
-}
-.navbar-inner {
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-  height: 78px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-}
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex: 0 0 auto;
-  color: white;
-}
-.navbar-brand .brand-mark {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
-  flex: 0 0 auto;
-}
-.navbar-brand .name {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: white;
-  border-left: 1px solid rgba(184, 153, 104, 0.35);
-  padding-left: 14px;
-  line-height: 1.1;
-}
-.navbar-brand .name span { display: block; font-size: 0.65rem; letter-spacing: 0.4em; color: var(--gold-light); margin-top: 4px; font-weight: 400; }
-
-.navbar-menu {
-  display: flex;
-  align-items: center;
-  gap: 36px;
-  list-style: none;
-}
-.navbar-menu a {
-  font-family: var(--font-label);
-  font-size: 0.78rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.85);
-  font-weight: 400;
-  position: relative;
-  padding: 6px 0;
-}
-.navbar-menu a::after {
-  content: "";
-  position: absolute;
-  bottom: 0; left: 50%;
-  width: 0; height: 1px; background: var(--gold);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-.navbar-menu a:hover { color: white; }
-.navbar-menu a:hover::after,
-.navbar-menu a.active::after { width: 100%; }
-.navbar-menu a.active { color: var(--gold-light); }
-
-.navbar-cta {
-  font-family: var(--font-label);
-  font-size: 0.72rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  padding: 12px 22px;
-  border: 1px solid var(--gold);
-  color: var(--gold-light);
-  transition: all 0.3s ease;
-}
-.navbar-cta:hover { background: var(--gold); color: var(--navy-deep); }
-
-/* mobile toggle */
-.navbar-toggle {
-  display: none;
-  width: 32px; height: 32px;
-  position: relative;
-  color: white;
-}
-.navbar-toggle span {
-  display: block; position: absolute; left: 4px; right: 4px;
-  height: 1.5px; background: var(--gold-light);
-  transition: all 0.3s ease;
-}
-.navbar-toggle span:nth-child(1) { top: 10px; }
-.navbar-toggle span:nth-child(2) { top: 16px; }
-.navbar-toggle span:nth-child(3) { top: 22px; }
-.navbar-toggle.open span:nth-child(1) { top: 16px; transform: rotate(45deg); }
-.navbar-toggle.open span:nth-child(2) { opacity: 0; }
-.navbar-toggle.open span:nth-child(3) { top: 16px; transform: rotate(-45deg); }
-
-/* ==========================================================================
    BUTTONS
    ========================================================================== */
 
@@ -835,18 +726,6 @@ section { position: relative; }
    ========================================================================== */
 
 @media (max-width: 980px) {
-  .navbar-menu, .navbar-cta { display: none; }
-  .navbar-toggle { display: block; }
-  .navbar-menu.open {
-    display: flex; flex-direction: column;
-    position: absolute; top: 78px; left: 0; right: 0;
-    background: var(--navy-deep);
-    padding: 24px var(--gutter);
-    gap: 18px;
-    border-bottom: 1px solid rgba(184, 153, 104, 0.2);
-  }
-  .navbar-menu.open a { padding: 8px 0; }
-
   .verticals { grid-template-columns: 1fr; }
   .pillars { grid-template-columns: 1fr; }
   .areas { grid-template-columns: 1fr; gap: 40px; }
@@ -883,10 +762,6 @@ section { position: relative; }
 
 @media (max-width: 600px) {
   .footer-grid { grid-template-columns: 1fr; }
-  .navbar-brand { gap: 10px; }
-  .navbar-brand .brand-mark { width: 46px; height: 46px; }
-  .navbar-brand .name { font-size: 0.85rem; padding-left: 10px; }
-  .navbar-brand .name span { font-size: 0.55rem; }
   .vertical { padding: 44px 30px; min-height: auto; }
   .pillar { padding: 36px 28px; }
   .form-card { padding: 32px 24px; }

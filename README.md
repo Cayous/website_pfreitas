@@ -101,7 +101,7 @@ O domínio canônico configurado no site é `https://rfreitas.adv.br/`. Se o dom
 ## Notas técnicas
 
 - Fontes via Google Fonts (Cormorant Garamond + Lora + Montserrat).
-- Mobile-first responsivo. O cabeçalho (`assets/navbar.css` + `navbar.js`) é o mesmo em todas as páginas, inclusive a Retaguarda: seis itens mais o botão "Fale Conosco", que faz o papel de Contato (no hambúrguer, "Contato" volta como item). Vira hambúrguer abaixo de 1240px e, além disso, o `navbar.js` mede o cabeçalho e o recolhe sempre que não couber — zoom, fonte maior no navegador —, para nunca alargar a página. Antes de acrescentar item ao menu, conferir que a soma ainda cabe nos 1.176px úteis do cabeçalho.
+- Mobile-first responsivo. O cabeçalho (`assets/navbar.css` + `navbar.js`) é o mesmo em todas as páginas, inclusive a Retaguarda: O Escritório · Planos de Saúde · Direito Médico · Golpe Bancário · Retaguarda · Equipe, mais o botão "Fale Conosco" (que faz o papel de Contato). O `navbar.js` mede o cabeçalho e recolhe em três estágios para nunca alargar a página: menu inteiro (≥ ~1228px); O Escritório e Equipe (`navbar-secondary`) vão para o hambúrguer (~1080–1224px); tudo no hambúrguer, com "Contato" como item. Zoom e fonte maior no navegador caem no mesmo mecanismo. O `styles.css` não tem mais regras de cabeçalho — elas ficam só no `navbar.css`.
 - Sem JavaScript pesado: toggle de menu, highlight de página ativa, consentimento e medição de cliques da campanha.
 - O contato institucional direciona para telefone, e-mail e WhatsApp; o site não coleta prontuários ou dados médicos por formulário.
 - As páginas principais possuem títulos e descrições exclusivos, URLs canônicas, Open Graph, HTML semântico e dados estruturados Schema.org.

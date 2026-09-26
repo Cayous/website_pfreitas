@@ -33,8 +33,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  flex: 0 1 auto;
-  min-width: 0;
+  flex: 0 0 auto;
   color: #fff;
 }
 
@@ -75,7 +74,8 @@
   list-style: none;
 }
 
-.navbar-menu a {
+.navbar-menu a,
+.navbar-drawer a {
   position: relative;
   display: block;
   padding: 6px 0;
@@ -90,7 +90,8 @@
   transition: color 0.25s ease;
 }
 
-.navbar-menu a::after {
+.navbar-menu a::after,
+.navbar-drawer a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -102,16 +103,20 @@
   transition: width 0.3s ease;
 }
 
-.navbar-menu a:hover {
+.navbar-menu a:hover,
+.navbar-drawer a:hover {
   color: #fff;
 }
 
 .navbar-menu a:hover::after,
-.navbar-menu a.active::after {
+.navbar-menu a.active::after,
+.navbar-drawer a:hover::after,
+.navbar-drawer a.active::after {
   width: 100%;
 }
 
-.navbar-menu a.active {
+.navbar-menu a.active,
+.navbar-drawer a.active {
   color: #c9ae82;
 }
 
@@ -166,15 +171,44 @@
 .navbar-toggle.open span:nth-child(3) { top: 16px; transform: rotate(-45deg); }
 
 /*
- * Menu recolhido (hambúrguer). Duas vias:
- * - pela largura, sem depender de JS: abaixo de 1240px os itens não cabem;
- * - pelo navbar.js, que mede e liga .is-compact sempre que o cabeçalho não
- *   couber (zoom, fonte de reserva, texto maior), para nunca alargar a página.
+ * Recolhimento em três estágios, para o cabeçalho nunca alargar a página:
+ * 1. tudo cabe: menu inteiro e botão;
+ * 2. .is-partial: O Escritório e Equipe (.navbar-secondary) saem da barra e
+ *    vão para o hambúrguer;
+ * 3. .is-compact: tudo vai para o hambúrguer.
+ * O navbar.js mede o cabeçalho e escolhe o estágio (vale para zoom e fonte
+ * maior no navegador). A media query só evita que o celular mostre o menu
+ * inteiro antes de o script rodar.
+ * O hambúrguer abre .navbar-drawer, lista que o navbar.js monta copiando o
+ * menu.
  */
-@media (max-width: 1240px) {
+.navbar-menu .navbar-menu-contato,
+.navbar.is-partial .navbar-menu .navbar-secondary,
+.navbar.is-compact .navbar-menu,
+.navbar.is-compact .navbar-cta {
+  display: none;
+}
+
+.navbar.is-partial .navbar-toggle,
+.navbar.is-compact .navbar-toggle {
+  display: block;
+}
+
+/* Só com tudo no hambúrguer a marca pode encolher (tela estreita, fonte grande). */
+.navbar.is-compact .navbar-brand {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+@media (max-width: 1076px) {
   .navbar-menu,
   .navbar-cta {
     display: none;
+  }
+
+  .navbar-brand {
+    flex-shrink: 1;
+    min-width: 0;
   }
 
   .navbar-toggle {
@@ -182,41 +216,35 @@
   }
 }
 
-.navbar.is-compact .navbar-menu:not(.open),
-.navbar.is-compact .navbar-cta {
-  display: none;
-}
-
-.navbar.is-compact .navbar-toggle {
-  display: block;
-}
-
-.navbar-menu.open {
+.navbar-drawer {
   position: absolute;
   top: 78px;
   right: 0;
   left: 0;
+  margin: 0;
   padding: 24px 32px;
-  display: flex;
+  display: none;
   flex-direction: column;
+  align-items: center;
   gap: 18px;
+  list-style: none;
   background: #07112b;
   border-bottom: 1px solid rgba(184, 153, 104, 0.2);
 }
 
-.navbar-menu-contato {
-  display: none;
+.navbar-drawer.open {
+  display: flex;
 }
 
-/* No hambúrguer o botão "Fale Conosco" some; o contato entra na lista. */
-.navbar-menu.open .navbar-menu-contato {
-  display: block;
-}
-
-.navbar-menu.open a {
+.navbar-drawer a {
   padding: 8px 0;
   font-size: 0.78rem;
   letter-spacing: 0.22em;
+}
+
+/* No estágio 2 a barra ainda mostra o resto e o botão "Fale Conosco". */
+.navbar.is-partial .navbar-drawer li:not(.navbar-secondary) {
+  display: none;
 }
 
 @media (max-width: 600px) {
