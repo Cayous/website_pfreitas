@@ -11,7 +11,6 @@
   const CONVERSION_SEND_TO = null;
 
   const dataLayer = window.dataLayer = window.dataLayer || [];
-  const header = document.querySelector(".lp-header");
   const year = document.getElementById("current-year");
   const consentBanner = document.getElementById("consent-banner");
 
@@ -55,16 +54,6 @@
   if (year) {
     year.textContent = String(new Date().getFullYear());
   }
-
-  /* ---------------------------- Header sticky --------------------------- */
-  const updateHeader = () => {
-    if (header) {
-      header.classList.toggle("scrolled", window.scrollY > 24);
-    }
-  };
-
-  updateHeader();
-  window.addEventListener("scroll", updateHeader, { passive: true });
 
   /* --------------------- Rastreio dos cliques no WhatsApp --------------- */
   document.querySelectorAll(".whatsapp-link").forEach((link) => {

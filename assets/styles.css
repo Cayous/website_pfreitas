@@ -376,6 +376,10 @@ section { position: relative; }
 .section-head.left .rule { margin-left: 0; }
 .section-head.left p { margin: 0; }
 
+/* Texto corrido das páginas de conteúdo */
+.prose > p + p { margin-top: 1.1em; }
+.prose > h3 { margin: 2.2rem 0 0.8rem; }
+
 /* ==========================================================================
    VERTICAL CARDS (Home)
    ========================================================================== */

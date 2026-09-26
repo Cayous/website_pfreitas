@@ -101,7 +101,7 @@ O domínio canônico configurado no site é `https://rfreitas.adv.br/`. Se o dom
 ## Notas técnicas
 
 - Fontes via Google Fonts (Cormorant Garamond + Lora + Montserrat).
-- Mobile-first responsivo. Navbar vira hamburger abaixo de 980px.
+- Mobile-first responsivo. Navbar vira hamburger abaixo de 1100px. O menu principal tem cinco itens e todas as páginas, inclusive a Retaguarda, usam o mesmo cabeçalho (`assets/navbar.css`); página nova entra no rodapé, não no menu, para o cabeçalho não estourar a largura.
 - Sem JavaScript pesado: toggle de menu, highlight de página ativa, consentimento e medição de cliques da campanha.
 - O contato institucional direciona para telefone, e-mail e WhatsApp; o site não coleta prontuários ou dados médicos por formulário.
 - As páginas principais possuem títulos e descrições exclusivos, URLs canônicas, Open Graph, HTML semântico e dados estruturados Schema.org.
