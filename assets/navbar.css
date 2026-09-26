@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 18px;
 }
 
 .navbar a {
@@ -33,7 +33,8 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
+  min-width: 0;
   color: #fff;
 }
 
@@ -52,7 +53,7 @@
   font-size: 1.05rem;
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -70,7 +71,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 20px;
   list-style: none;
 }
 
@@ -80,10 +81,10 @@
   padding: 6px 0;
   color: rgba(255, 255, 255, 0.85);
   font-family: "Montserrat", sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   white-space: nowrap;
   transition: color 0.25s ease;
@@ -116,14 +117,14 @@
 
 .navbar-cta {
   flex: 0 0 auto;
-  padding: 12px 22px;
+  padding: 12px 14px;
   color: #c9ae82;
   border: 1px solid #b89968;
   font-family: "Montserrat", sans-serif;
   font-size: 0.72rem;
   font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   transition: color 0.3s ease, background 0.3s ease;
 }
@@ -135,6 +136,7 @@
 
 .navbar-toggle {
   position: relative;
+  flex: 0 0 auto;
   width: 32px;
   height: 32px;
   margin: 0;
@@ -163,7 +165,13 @@
 .navbar-toggle.open span:nth-child(2) { opacity: 0; }
 .navbar-toggle.open span:nth-child(3) { top: 16px; transform: rotate(-45deg); }
 
-@media (max-width: 1100px) {
+/*
+ * Menu recolhido (hambúrguer). Duas vias:
+ * - pela largura, sem depender de JS: abaixo de 1240px os itens não cabem;
+ * - pelo navbar.js, que mede e liga .is-compact sempre que o cabeçalho não
+ *   couber (zoom, fonte de reserva, texto maior), para nunca alargar a página.
+ */
+@media (max-width: 1240px) {
   .navbar-menu,
   .navbar-cta {
     display: none;
@@ -172,23 +180,43 @@
   .navbar-toggle {
     display: block;
   }
+}
 
-  .navbar-menu.open {
-    position: absolute;
-    top: 78px;
-    right: 0;
-    left: 0;
-    padding: 24px 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    background: #07112b;
-    border-bottom: 1px solid rgba(184, 153, 104, 0.2);
-  }
+.navbar.is-compact .navbar-menu:not(.open),
+.navbar.is-compact .navbar-cta {
+  display: none;
+}
 
-  .navbar-menu.open a {
-    padding: 8px 0;
-  }
+.navbar.is-compact .navbar-toggle {
+  display: block;
+}
+
+.navbar-menu.open {
+  position: absolute;
+  top: 78px;
+  right: 0;
+  left: 0;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #07112b;
+  border-bottom: 1px solid rgba(184, 153, 104, 0.2);
+}
+
+.navbar-menu-contato {
+  display: none;
+}
+
+/* No hambúrguer o botão "Fale Conosco" some; o contato entra na lista. */
+.navbar-menu.open .navbar-menu-contato {
+  display: block;
+}
+
+.navbar-menu.open a {
+  padding: 8px 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
 }
 
 @media (max-width: 600px) {

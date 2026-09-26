@@ -46,9 +46,23 @@
     }
   });
 
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 1100) {
+  // Recolhe o menu sempre que ele não couber na largura disponível.
+  const navbar = menu.closest(".navbar");
+  const inner = menu.closest(".navbar-inner");
+
+  const fitMenu = () => {
+    navbar.classList.remove("is-compact");
+    const overflows = inner.scrollWidth > inner.clientWidth;
+    navbar.classList.toggle("is-compact", overflows);
+
+    if (getComputedStyle(toggle).display === "none") {
       closeMenu();
     }
-  });
+  };
+
+  fitMenu();
+  window.addEventListener("resize", fitMenu);
+  if (document.fonts) {
+    document.fonts.ready.then(fitMenu);
+  }
 })();

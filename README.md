@@ -87,7 +87,7 @@ demais páginas, `canonical` próprio e conteúdo informativo e sóbrio, sem
 menção a honorários e sem promessa de resultado (Provimento 205/2021 da OAB).
 
 A `retaguarda.html` é a única página dirigida a **advogados**, não a clientes
-finais — por isso fica no rodapé e não no menu principal.
+finais. Está no menu e no rodapé.
 
 Telefone: desde 26.09.2026 **todas** as páginas usam o celular profissional do
 Ricardo, (61) 99679-8902; o celular do escritório, (61) 99641-9368, foi
@@ -101,7 +101,7 @@ O domínio canônico configurado no site é `https://rfreitas.adv.br/`. Se o dom
 ## Notas técnicas
 
 - Fontes via Google Fonts (Cormorant Garamond + Lora + Montserrat).
-- Mobile-first responsivo. Navbar vira hamburger abaixo de 1100px. O menu principal tem cinco itens e todas as páginas, inclusive a Retaguarda, usam o mesmo cabeçalho (`assets/navbar.css`); página nova entra no rodapé, não no menu, para o cabeçalho não estourar a largura.
+- Mobile-first responsivo. O cabeçalho (`assets/navbar.css` + `navbar.js`) é o mesmo em todas as páginas, inclusive a Retaguarda: seis itens mais o botão "Fale Conosco", que faz o papel de Contato (no hambúrguer, "Contato" volta como item). Vira hambúrguer abaixo de 1240px e, além disso, o `navbar.js` mede o cabeçalho e o recolhe sempre que não couber — zoom, fonte maior no navegador —, para nunca alargar a página. Antes de acrescentar item ao menu, conferir que a soma ainda cabe nos 1.176px úteis do cabeçalho.
 - Sem JavaScript pesado: toggle de menu, highlight de página ativa, consentimento e medição de cliques da campanha.
 - O contato institucional direciona para telefone, e-mail e WhatsApp; o site não coleta prontuários ou dados médicos por formulário.
 - As páginas principais possuem títulos e descrições exclusivos, URLs canônicas, Open Graph, HTML semântico e dados estruturados Schema.org.
