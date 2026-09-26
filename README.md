@@ -87,8 +87,12 @@ demais páginas, `canonical` próprio e conteúdo informativo e sóbrio, sem
 menção a honorários e sem promessa de resultado (Provimento 205/2021 da OAB).
 
 A `retaguarda.html` é a única página dirigida a **advogados**, não a clientes
-finais — por isso fica no rodapé e não no menu principal, e usa o telefone
-pessoal do Ricardo, enquanto as demais usam o número do CNPJ.
+finais — por isso fica no rodapé e não no menu principal.
+
+Telefone: desde 26.09.2026 **todas** as páginas usam o celular profissional do
+Ricardo, (61) 99679-8902; o celular do escritório, (61) 99641-9368, foi
+cancelado. O perfil "Pacheco Freitas Advocacia" no Google Maps já mostra o
+número novo.
 
 ## Domínio
 
