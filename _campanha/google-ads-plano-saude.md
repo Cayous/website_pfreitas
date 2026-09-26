@@ -282,7 +282,7 @@ Fixar apenas quando necessário para coerência. Evitar fixação excessiva, que
 
 - Sitelinks: “Como funciona”, “Negativa de internação”, “Documentos para análise”, “Conheça Ricardo”, “Dúvidas frequentes”, “Medicamento de alto custo”, “Cirurgia ou procedimento” e “Negativa de home care”.
 - Frases de destaque: “OAB/DF 44.412”, “Atendimento pelo advogado”, “Brasília e todo o DF”, “Análise individual” e “Todos os dias, 8h às 22h”.
-- Recurso de chamada: `(61) 99641-9368`, somente se Ricardo também quiser receber ligações; a landing page prioriza WhatsApp.
+- Recurso de chamada: `(61) 99679-8902`, somente se Ricardo também quiser receber ligações; a landing page prioriza WhatsApp.
 - Não usar preço, promoção, formulário de lead do Google ou frases como “liminar rápida”, “resultado garantido” ou “especialista”.
 
 ## 6. Medição e privacidade
