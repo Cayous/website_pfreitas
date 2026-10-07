@@ -22,6 +22,8 @@ Site estático em HTML/CSS/JS puro. Sem build, sem dependências, sem servidor d
     ├── styles.css              ← CSS do site (componentes novos no fim, "REPOSICIONAMENTO")
     ├── navbar.css, navbar.js   ← cabeçalho de todas as páginas
     ├── retaguarda.css, retaguarda.js
+    ├── assinatura-email.png    ← assinatura do Gmail de contato@: todo e-mail enviado
+    │                             aponta para cá. Não renomear nem apagar.
     └── foto_ricardo.jpeg, logo*.png
 ```
 
