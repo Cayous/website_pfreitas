@@ -30,29 +30,6 @@
   <link rel="stylesheet" href="assets/retaguarda.css">
   <link rel="stylesheet" href="assets/navbar.css">
 
-  <!-- Medição Google Ads: consentimento negado por padrão, sem personalização. -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-
-    (function () {
-      var consent = null;
-      try { consent = window.localStorage.getItem("rt_ads_consent"); } catch (error) { consent = null; }
-
-      gtag("consent", "default", {
-        ad_storage: consent === "accepted" ? "granted" : "denied",
-        analytics_storage: consent === "accepted" ? "granted" : "denied",
-        ad_user_data: consent === "accepted" ? "granted" : "denied",
-        ad_personalization: "denied",
-        wait_for_update: 500
-      });
-      gtag("set", "ads_data_redaction", true);
-      gtag("set", "url_passthrough", true);
-      gtag("js", new Date());
-      gtag("config", "AW-18328884280", { allow_ad_personalization_signals: false });
-    }());
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18328884280"></script>
 
   <script type="application/ld+json">
   {
@@ -90,7 +67,7 @@
           {
             "@type": "Question",
             "name": "Vocês assinam a peça ou entram no processo?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Não. Não recebemos procuração, não substabelecemos e não somos cadastrados nos autos. A peça sai no seu timbre e com a sua assinatura. Para o juízo e para a parte contrária, o advogado do caso é você." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Na Retaguarda, não. Não recebemos procuração, não substabelecemos e não somos cadastrados nos autos. A peça sai no seu timbre e com a sua assinatura. Quando o caso precisa de atuação nos autos em Brasília, como despacho, memorial ou sustentação, isso é feito pela frente de Tribunais Superiores, com substabelecimento." }
           },
           {
             "@type": "Question",
@@ -128,15 +105,16 @@
       <img src="assets/logo-mark.png" alt="" class="brand-mark" width="52" height="52" aria-hidden="true">
       <div class="name">Pacheco Freitas<span>Advocacia</span></div>
     </a>
+    <!-- menu -->
     <ul class="navbar-menu" id="navbar-menu">
-      <li class="navbar-secondary"><a href="escritorio.html">O Escritório</a></li>
-      <li><a href="plano-de-saude.html">Planos de Saúde</a></li>
-      <li><a href="medico.html">Direito Médico</a></li>
-      <li><a href="golpe-falso-funcionario-banco.html">Golpe Bancário</a></li>
-      <li><a href="retaguarda.html">Retaguarda</a></li>
-      <li class="navbar-secondary"><a href="equipe.html">Equipe</a></li>
-      <li class="navbar-menu-contato"><a href="contato.html">Contato</a></li>
+      <li><a href="/tribunais-superiores.html">Tribunais Superiores</a></li>
+      <li><a href="/causas-complexas.html">Causas Complexas</a></li>
+      <li><a href="/retaguarda.html">Retaguarda</a></li>
+      <li><a href="/artigos/">Artigos</a></li>
+      <li class="navbar-secondary"><a href="/sobre.html">Sobre</a></li>
+      <li class="navbar-menu-contato"><a href="/contato.html">Contato</a></li>
     </ul>
+<!-- /menu -->
     <a class="navbar-cta whatsapp-link"
        href="https://wa.me/5561996798902?text=Ol%C3%A1.%20Vim%20pela%20p%C3%A1gina%20da%20Retaguarda%20e%20queria%20falar%20sobre%20a%20produ%C3%A7%C3%A3o%20de%20pe%C3%A7as%20do%20meu%20escrit%C3%B3rio."
        target="_blank" rel="noopener noreferrer" data-cta-location="header">Fale Conosco</a>
@@ -650,7 +628,7 @@
       <div class="faq-list">
         <details>
           <summary>Vocês assinam a peça ou entram no processo?<span aria-hidden="true"></span></summary>
-          <p>Não. Não recebemos procuração, não substabelecemos e não somos cadastrados nos autos. A peça sai no seu timbre e com a sua assinatura. Para o juízo, para a parte contrária e para o seu cliente, o advogado do caso é você — porque é.</p>
+          <p>Na Retaguarda, não. Não recebemos procuração, não substabelecemos e não somos cadastrados nos autos. A peça sai no seu timbre e com a sua assinatura. Para o juízo, para a parte contrária e para o seu cliente, o advogado do caso é você — porque é. Quando o caso precisa de atuação nos autos em Brasília, isso é a frente de <a href="tribunais-superiores.html">Tribunais Superiores</a>.</p>
         </details>
         <details>
           <summary>Em quanto tempo a peça fica pronta?<span aria-hidden="true"></span></summary>
@@ -686,7 +664,7 @@
         </details>
         <details>
           <summary>Vocês fazem audiências e sustentações?<span aria-hidden="true"></span></summary>
-          <p>A Retaguarda é dedicada à produção escrita — é nela que conseguimos garantir prazo, padrão e revisão sênior. Audiências e sustentações orais podem ser tratadas caso a caso, mas não integram o serviço padrão nem o orçamento de produção de peças.</p>
+          <p>A Retaguarda é dedicada à produção escrita — é nela que conseguimos garantir prazo, padrão e revisão sênior. Despacho em gabinete, memorial e sustentação oral nos tribunais superiores são feitos pela frente de <a href="tribunais-superiores.html">Tribunais Superiores</a>, com substabelecimento, e combinados à parte.</p>
         </details>
         <details>
           <summary>Qual o volume mínimo para começar?<span aria-hidden="true"></span></summary>
@@ -751,14 +729,6 @@
   </a>
 </div>
 
-<aside class="consent" id="consent-banner" aria-label="Preferências de privacidade" hidden>
-  <strong>Privacidade e medição</strong>
-  <p>Usamos medição do Google Ads apenas para saber se um anúncio gerou contato. Não enviamos nome, mensagem nem dados de processos. <a href="privacidade.html">Saiba mais</a>.</p>
-  <div class="consent-actions">
-    <button type="button" data-consent="rejected">Recusar</button>
-    <button type="button" class="accept" data-consent="accepted">Aceitar medição</button>
-  </div>
-</aside>
 
 <script src="assets/navbar.js" defer></script>
 <script src="assets/retaguarda.js" defer></script>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artigos · Pacheco Freitas Advocacia</title>
+    <link>https://rfreitas.adv.br/artigos/</link>
+    <atom:link href="https://rfreitas.adv.br/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Artigos técnicos para advogados, escritos a partir dos processos que o escritório conduz.</description>
+    <language>pt-BR</language>
+    <lastBuildDate>Wed, 07 Oct 2026 09:00:00 -0300</lastBuildDate>
+    <item>
+      <title>Tratamento fora do rol da ANS: o que a tutela de urgência precisa ter depois da ADI 7.265</title>
+      <link>https://rfreitas.adv.br/artigos/plano-de-saude-negativa-de-cobertura.html</link>
+      <guid isPermaLink="true">https://rfreitas.adv.br/artigos/plano-de-saude-negativa-de-cobertura.html</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 -0300</pubDate>
+      <category>Saúde suplementar</category>
+      <description>O STF fixou cinco requisitos cumulativos para a cobertura fora do rol e quatro verificações que o juiz deve fazer antes de decidir, sob pena de nulidade. A liminar concedida só com o relatório do médico assistente ficou exposta no agravo.</description>
+    </item>
+    <item>
+      <title>Inadmitido o recurso especial: agravo interno ou agravo em recurso especial?</title>
+      <link>https://rfreitas.adv.br/artigos/agravo-interno-ou-agravo-em-recurso-especial.html</link>
+      <guid isPermaLink="true">https://rfreitas.adv.br/artigos/agravo-interno-ou-agravo-em-recurso-especial.html</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 -0300</pubDate>
+      <category>Tribunais superiores</category>
+      <description>A decisão do tribunal de origem pode ter dois tipos de fundamento, e cada um tem o seu recurso. Errar a escolha é erro grosseiro, sem fungibilidade. Com a Lei 15.484/2026, a negativa de seguimento por relevância entrou no caminho do agravo interno.</description>
+    </item>
+    <item>
+      <title>Golpe da falsa central: a ação contra o banco se ganha nos fatos que o acórdão registra</title>
+      <link>https://rfreitas.adv.br/artigos/golpe-do-falso-funcionario-responsabilidade-do-banco.html</link>
+      <guid isPermaLink="true">https://rfreitas.adv.br/artigos/golpe-do-falso-funcionario-responsabilidade-do-banco.html</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 -0300</pubDate>
+      <category>Direito bancário</category>
+      <description>O STJ exige dos bancos sistemas que barrem operações fora do perfil do cliente e já listou os sinais que contam. Mas a tese só chega ao recurso especial se o tribunal de origem tiver registrado esses fatos. Dois julgamentos da Terceira Turma mostram os dois lados.</description>
+    </item>
+    <item>
+      <title>Erro médico: quando o hospital responde sem culpa e quando é preciso provar a culpa do médico</title>
+      <link>https://rfreitas.adv.br/artigos/responsabilidade-civil-medica-medico-e-hospital.html</link>
+      <guid isPermaLink="true">https://rfreitas.adv.br/artigos/responsabilidade-civil-medica-medico-e-hospital.html</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 -0300</pubDate>
+      <category>Responsabilidade civil médica</category>
+      <description>A responsabilidade do hospital não é uma só. Pelo que é dele, estrutura, enfermagem e equipamento, responde sem culpa. Pelo ato técnico do médico, depende do vínculo e da prova da culpa. A Quarta Turma do STJ reafirmou a divisão em dezembro de 2025, e é ela que decide quem deve estar no polo passivo.</description>
+    </item>
+  </channel>
+</rss>

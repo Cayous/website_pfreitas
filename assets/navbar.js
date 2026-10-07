@@ -3,10 +3,14 @@
 
   const toggle = document.getElementById("navbar-toggle");
   const menu = document.getElementById("navbar-menu");
-  const page = window.location.pathname.split("/").pop() || "index.html";
+  // Os links do menu são absolutos ("/artigos/"); um artigo marca "Artigos".
+  const semIndex = (caminho) => caminho.replace(/\/index\.html$/, "/");
+  const here = semIndex(window.location.pathname);
 
   document.querySelectorAll(".navbar-menu a").forEach((link) => {
-    const isCurrentPage = link.getAttribute("href") === page;
+    const target = semIndex(new URL(link.href, window.location.href).pathname);
+    const isCurrentPage = target === here
+      || (target !== "/" && target.endsWith("/") && here.startsWith(target));
     link.classList.toggle("active", isCurrentPage);
 
     if (isCurrentPage) {
