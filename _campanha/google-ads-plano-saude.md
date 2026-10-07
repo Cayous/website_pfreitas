@@ -327,3 +327,9 @@ O primeiro ciclo não deve ser julgado apenas por cliques ou mensagens. A métri
 - tempo e capacidade de resposta entre 8h e 22h.
 
 Não estabelecer meta numérica de CPL antes de medir CPC e taxa de qualificação reais em Brasília/DF.
+
+## Encerramento (07/10/2026)
+
+- Campanha `Pesquisa | Plano de Saude | DF`, na conta "Pacheco Freitas Advocacia" (`970-619-0954`, login `contato@rfreitas.adv.br`): **pausada**, conforme o painel visto pelo Ricardo em 07/10/2026.
+- Motivo: o site passou a falar com advogados (tribunais superiores, causas complexas, Retaguarda). A landing page `plano-de-saude.html` virou redirecionamento para o artigo técnico `/artigos/plano-de-saude-negativa-de-cobertura.html`, preservando o `gclid`, e a etiqueta `AW-18328884280` saiu de todas as páginas.
+- A conta antiga de `ricardo.cayous@gmail.com` ("Ricardo Pacheco", `520-194-7716`) está cancelada, com duas campanhas removidas e aviso de reembolsos ou cobranças pendentes a resolver no faturamento.
